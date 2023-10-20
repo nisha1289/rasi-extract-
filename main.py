@@ -49,9 +49,9 @@ AUTH_USERS = [ int(chat) for chat in Config.AUTH_USERS.split(",") if chat != '']
 prefixes = ["/", "~", "?", "!"]
 
 plugins = dict(root="plugins")
-if __name__ == "__main__" :
+if __name__ == "@Anandbhaw" :
     bot = Client(
-        "Allinonebot",
+        "nishant078bot",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
         api_hash=Config.API_HASH,
