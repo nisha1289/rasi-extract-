@@ -21,11 +21,31 @@
 #  SOFTWARE
 
 
-import os
-from config import Config
-import asyncio, logging
-import tgcrypto
+import requests
+import json
+import subprocess
+from pyrogram.types.messages_and_media import message
+import helper
 from pyromod import listen
+from pyrogram.types import Message
+import tgcrypto
+import pyrogram
+from pyrogram import Client, filters
+from pyrogram.types.messages_and_media import message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+import asyncio
+from pyrogram.errors import FloodWait
+import time
+from pyrogram.types import User, Message
+from p_bar import progress_bar
+import subprocess
+from subprocess import getstatusoutput
+import logging
+import os
+import sys
+from get_video_info import get_video_attributes, get_video_thumb
+import re
+from pyrogram import Client as bot
 from logging.handlers import RotatingFileHandler
 
 LOGGER = logging.getLogger(__name__)
