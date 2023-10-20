@@ -23,6 +23,7 @@
 
 import os
 from config import Config
+import pyrogram
 from pyrogram import Client, idle
 import asyncio, logging
 import tgcrypto
