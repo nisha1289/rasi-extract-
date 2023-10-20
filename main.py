@@ -23,7 +23,6 @@
 
 import os
 from config import Config
-import Client, message 
 import asyncio, logging
 import tgcrypto
 from pyromod import listen
